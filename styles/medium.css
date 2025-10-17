@@ -1,0 +1,77 @@
+@media only screen and (min-width: 41rem) and (max-width: 80rem) {
+    :root {
+        --screen:  "Medium";
+    }
+.body {
+    font-family: inherit;
+}
+.header {
+    font-family: inherit;    
+}
+.header-menu-anchor {
+    font-family: inherit;
+}
+.header-menu-title {
+    font-family: inherit;
+}
+.header-menu-navigation {
+    font-family: inherit;
+}
+.header-menu-navigation-list {
+    font-family: inherit;
+}
+.header-menu-item {
+    font-family: inherit;
+}
+.home-menu-item {
+    font-family: inherit;
+}
+.active {
+    font-family: inherit;
+}
+.header-menu-item-anchor {
+    font-family: inherit;
+}
+.home-menu-item-anchor {
+    font-family: inherit;
+}
+.header-menu-item {
+    font-family: inherit;
+}
+.page1-menu-item {
+    font-family: inherit;
+}
+.header-menu-item-anchor {
+    font-family: inherit;
+}
+.page1-menu-item-anchor {
+    font-family: inherit;
+}
+.header-menu-item {
+    font-family: inherit;
+}
+.page2-menu-item {
+    font-family: inherit;
+}
+.header-menu-item-anchor {
+    font-family: inherit;
+}
+.page2-menu-item-anchor {
+    font-family: inherit;
+}
+.main {
+    font-family: inherit;
+}
+.main-title {
+    font-family: inherit;
+}
+.footer {
+    font-family: inherit;
+}
+.currentyear {
+    font-family: inherit;
+}
+.lastModified {
+    font-family: inherit;
+}
+}
