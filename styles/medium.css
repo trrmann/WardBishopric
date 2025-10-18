@@ -105,6 +105,9 @@
     .main-title {
         font-size: 3rem;
     }
+    .contentContainer {
+        font-family: inherit;
+    }
     .footer {
         font-family: inherit;
     }

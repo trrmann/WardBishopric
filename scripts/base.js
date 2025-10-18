@@ -46,7 +46,7 @@ const signInMenuItem = document.querySelector('.signIn-menu-item');
 const signInMenuItemAnchor = document.querySelector('.signIn-menu-item-anchor');
 const main = document.querySelector('.main');
 const mainTitle = document.querySelector('.main-title');
-//const contentContainer = document.querySelector('.contentContainer');
+const contentContainer = document.querySelector('.contentContainer');
 const footer = document.querySelector('.footer');
 // Get the currentYear element from html
 const currentYearElement = document.querySelector('.currentyear');

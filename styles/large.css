@@ -126,6 +126,9 @@
     .main-title {
         font-size: 4rem;
     }
+    .contentContainer {
+        font-family: inherit;
+    }
     .footer {
         font-family: inherit;
     }
