@@ -15,6 +15,7 @@ const oldDate = new Date("1776-7-4");
 
 // get parameter value and assign to a variable
 const page = urlParams.get('page');
+let menu = urlParams.get('menu');
 
 // Get page elements by class
 const body = document.querySelector('.body');
@@ -29,10 +30,20 @@ let headerMenuItem = document.querySelector('.active');
 const headerMenuItemAnchors = document.querySelectorAll('.header-menu-item-anchor');
 const homeMenuItem = document.querySelector('.home-menu-item');
 const homeMenuItemAnchor = document.querySelector('.home-menu-item-anchor');
-const page1MenuItem = document.querySelector('.page1-menu-item');
-const page1MenuItemAnchor = document.querySelector('.page1-menu-item-anchor');
-const page2MenuItem = document.querySelector('.page2-menu-item');
-const page2MenuItemAnchor = document.querySelector('.page2-menu-item-anchor');
+const bishopMenuItem = document.querySelector('.bishop-menu-item');
+const bishopMenuItemAnchor = document.querySelector('.bishop-menu-item-anchor');
+const counselorMenuItem = document.querySelector('.counselor-menu-item');
+const counselorMenuItemAnchor = document.querySelector('.counselor-menu-item-anchor');
+const secretaryMenuItem = document.querySelector('.secretary-menu-item');
+const secretaryMenuItemAnchor = document.querySelector('.secretary-menu-item-anchor');
+const clerkMenuItem = document.querySelector('.clerk-menu-item');
+const clerkMenuItemAnchor = document.querySelector('.clerk-menu-item-anchor');
+const clerkMembershipMenuItem = document.querySelector('.clerk-membership-menu-item');
+const clerkMembershipMenuItemAnchor = document.querySelector('.clerk-membership-menu-item-anchor');
+const clerkFinanceMenuItem = document.querySelector('.clerk-finance-menu-item');
+const clerkFinanceMenuItemAnchor = document.querySelector('.clerk-finance-menu-item-anchor');
+const signInMenuItem = document.querySelector('.signIn-menu-item');
+const signInMenuItemAnchor = document.querySelector('.signIn-menu-item-anchor');
 const main = document.querySelector('.main');
 const mainTitle = document.querySelector('.main-title');
 //const contentContainer = document.querySelector('.contentContainer');
@@ -42,6 +53,17 @@ const currentYearElement = document.querySelector('.currentyear');
 // Get the lastModified element from html
 const lastModElement = document.querySelector('.lastModified');
 
+if(menu) {
+	headerMenuNavigation.classList.toggle('show');
+	headerMenuAnchor.classList.toggle('show');
+    let menu=false;
+}
+// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
+headerMenuAnchor.addEventListener('click', () => {
+	headerMenuNavigation.classList.toggle('show');
+	headerMenuAnchor.classList.toggle('show');
+});
+
 // update the html element with the data
 if(currentYearElement) {
     currentYearElement.innerHTML = `&copy; ${currentYear}`;
@@ -50,3 +72,40 @@ if(currentYearElement) {
 if(lastModElement) {
 lastModElement.innerHTML = `Last modification:  ${lastModDate}`;
 }
+headerMenuItem.classList.toggle('active');
+switch (page) {
+    case "home":
+        mainTitle.textContent = "Home";
+        headerMenuItem = homeMenuItem;
+        //root.style.setProperty('--contentHeight', '1fr');
+        break;
+    case "bishop":
+        mainTitle.textContent = "Bishop";
+        headerMenuItem = bishopMenuItem;
+        break;
+    case "counselor":
+        mainTitle.textContent = "Counselor";
+        headerMenuItem = counselorMenuItem;
+        break;
+    case "secretary":
+        mainTitle.textContent = "Secretary";
+        headerMenuItem = secretaryMenuItem;
+        break;
+    case "clerk":
+        mainTitle.textContent = "Clerk";
+        headerMenuItem = clerkMenuItem;
+        break;
+    case "clerkMemberShip":
+        mainTitle.textContent = "Clerk - Membership";
+        headerMenuItem = clerkMembershipMenuItem;
+        break;
+    case "clerkFinance":
+        mainTitle.textContent = "Clerk - Finance";
+        headerMenuItem = clerkFinanceMenuItem;
+        break;
+    case "SignIn":
+        mainTitle.textContent = "Sign In";
+        headerMenuItem = signInMenuItem;
+        break;
+}
+headerMenuItem.classList.toggle('active');

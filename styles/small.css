@@ -2,76 +2,133 @@
     :root {
         --screen:  "Small";
     }
-.body {
-    font-family: inherit;
-}
-.header {
-    font-family: inherit;    
-}
-.header-menu-anchor {
-    font-family: inherit;
-}
-.header-menu-title {
-    font-family: inherit;
-}
-.header-menu-navigation {
-    font-family: inherit;
-}
-.header-menu-navigation-list {
-    font-family: inherit;
-}
-.header-menu-item {
-    font-family: inherit;
-}
-.home-menu-item {
-    font-family: inherit;
-}
-.active {
-    font-family: inherit;
-}
-.header-menu-item-anchor {
-    font-family: inherit;
-}
-.home-menu-item-anchor {
-    font-family: inherit;
-}
-.header-menu-item {
-    font-family: inherit;
-}
-.page1-menu-item {
-    font-family: inherit;
-}
-.header-menu-item-anchor {
-    font-family: inherit;
-}
-.page1-menu-item-anchor {
-    font-family: inherit;
-}
-.header-menu-item {
-    font-family: inherit;
-}
-.page2-menu-item {
-    font-family: inherit;
-}
-.header-menu-item-anchor {
-    font-family: inherit;
-}
-.page2-menu-item-anchor {
-    font-family: inherit;
-}
-.main {
-    font-family: inherit;
-}
-.main-title {
-    font-family: inherit;
-}
-.footer {
-    font-family: inherit;
-}
-.currentyear {
-    font-family: inherit;
-}
-.lastModified {
-    font-family: inherit;
-}
+    .body {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .header {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .header-menu-anchor {
+        border: .1rem;
+        padding: .1rem;
+	    display: inline-flex;
+        width: 99.25%;
+        text-align: left;
+    }
+    .header-menu-anchor::before {
+	    content: "≡";
+        padding: 1rem;
+        font-size: 2.5rem;
+        align-self: center;
+    }
+    .header-menu-anchor.show::before {
+	    content: "X";
+        padding: 1rem;
+        font-size: 2.5rem;
+        align-self: center;
+    }
+    .header-menu-title {
+        border: 1rem;
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+    .header-menu-navigation {
+        border: .1rem;
+        padding: .1rem;
+        display: none;
+    }
+    .header-menu-navigation.show {
+        border: .1rem;
+        padding: .1rem;
+        display: block;
+    }
+    .header-menu-navigation-list {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .header-menu-navigation-list li {
+	    display: block;
+    }
+    .header-menu-item {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .active {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .active::before {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .header-menu-item-anchor {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .home-menu-item {
+        border: .1rem;
+        padding: .1rem;
+    }
+    .home-menu-item-anchor {
+        font-family: inherit;
+    }
+    .bishop-menu-item {
+        font-family: inherit;
+    }
+    .bishop-menu-item-anchor {
+        font-family: inherit;
+    }
+    .counselor-menu-item {
+        font-family: inherit;
+    }
+    .counselor-menu-item-anchor {
+        font-family: inherit;
+    }
+    .secretary-menu-item {
+        font-family: inherit;
+    }
+    .secretary-menu-item-anchor {
+        font-family: inherit;
+    }
+    .clerk-menu-item {
+        font-family: inherit;
+    }
+    .clerk-menu-item-anchor {
+        font-family: inherit;
+    }
+    .clerk-membership-menu-item {
+        font-family: inherit;
+    }
+    .clerk-membership-menu-item-anchor {
+        font-family: inherit;
+    }
+    .clerk-finance-menu-item {
+        font-family: inherit;
+    }
+    .clerk-finance-menu-item-anchor {
+        font-family: inherit;
+    }
+    .signIn-menu-item {
+        font-family: inherit;
+    }
+    .signIn-menu-item-anchor {
+        font-family: inherit;
+    }
+    .main {
+        font-family: inherit;
+    }
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .footer {
+        font-family: inherit;
+    }
+    .currentyear {
+        font-family: inherit;
+    }
+    .lastModified {
+        font-family: inherit;
+    }
 }

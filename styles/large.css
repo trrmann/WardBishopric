@@ -1,77 +1,138 @@
-@media only screen and (min-width: 81rem) {
+@media only screen and (min-width: 80rem) {
     :root {
         --screen:  "Large";
     }
-.body {
-    font-family: inherit;
-}
-.header {
-    font-family: inherit;    
-}
-.header-menu-anchor {
-    font-family: inherit;
-}
-.header-menu-title {
-    font-family: inherit;
-}
-.header-menu-navigation {
-    font-family: inherit;
-}
-.header-menu-navigation-list {
-    font-family: inherit;
-}
-.header-menu-item {
-    font-family: inherit;
-}
-.home-menu-item {
-    font-family: inherit;
-}
-.active {
-    font-family: inherit;
-}
-.header-menu-item-anchor {
-    font-family: inherit;
-}
-.home-menu-item-anchor {
-    font-family: inherit;
-}
-.header-menu-item {
-    font-family: inherit;
-}
-.page1-menu-item {
-    font-family: inherit;
-}
-.header-menu-item-anchor {
-    font-family: inherit;
-}
-.page1-menu-item-anchor {
-    font-family: inherit;
-}
-.header-menu-item {
-    font-family: inherit;
-}
-.page2-menu-item {
-    font-family: inherit;
-}
-.header-menu-item-anchor {
-    font-family: inherit;
-}
-.page2-menu-item-anchor {
-    font-family: inherit;
-}
-.main {
-    font-family: inherit;
-}
-.main-title {
-    font-family: inherit;
-}
-.footer {
-    font-family: inherit;
-}
-.currentyear {
-    font-family: inherit;
-}
-.lastModified {
-    font-family: inherit;
-}
+    .body {
+        border: .5rem;
+        padding: .5rem;
+    }
+    .header {
+        border: .5rem;
+        padding: .5rem;
+        display: flex;
+    }
+    .header-menu-anchor {
+        border: .5rem;
+        padding: .5rem;
+        text-align: center;
+        width: 25%;
+    }
+    .header-menu-anchor::before {
+        border: .5rem;
+        padding: .5rem;
+	    content: none;
+    }
+    .header-menu-anchor.show::before {
+        border: .5rem;
+        padding: .5rem;
+	    content: none;
+    }
+    .header-menu-title {
+        border: .5rem;
+        padding: .5rem;
+        font-size: 3rem;
+    }
+    .header-menu-navigation {
+        border: .5rem;
+        padding: .5rem;
+        width: 75%;
+    }
+    .header-menu-navigation.show {
+        border: .5rem;
+        padding: .5rem;
+        width: 75%;
+    }
+    .header-menu-navigation-list {
+        border: .5rem;
+        padding: .5rem;
+        display: flex;
+    }
+    .header-menu-navigation-list li {
+        border: .5rem;
+        padding: .5rem;
+	    display: block;
+        flex: 1 1 100%;
+    }
+    .header-menu-item {
+        border: .5rem;
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+    .active {
+        border: .5rem;
+        padding: .5rem;
+    }
+    .active::before {
+        border: .5rem;
+        padding: .5rem;
+    }
+    .header-menu-item-anchor {
+        border: .5rem;
+        padding: .5rem;
+    }
+    .home-menu-item {
+        border: .5rem;
+        padding: .5rem;
+    }
+    .home-menu-item-anchor {
+        border: .5rem;
+        padding: .5rem;
+    }
+    .bishop-menu-item {
+        font-family: inherit;
+    }
+    .bishop-menu-item-anchor {
+        font-family: inherit;
+    }
+    .counselor-menu-item {
+        font-family: inherit;
+    }
+    .counselor-menu-item-anchor {
+        font-family: inherit;
+    }
+    .secretary-menu-item {
+        font-family: inherit;
+    }
+    .secretary-menu-item-anchor {
+        font-family: inherit;
+    }
+    .clerk-menu-item {
+        font-family: inherit;
+    }
+    .clerk-menu-item-anchor {
+        font-family: inherit;
+    }
+    .clerk-membership-menu-item {
+        font-family: inherit;
+    }
+    .clerk-membership-menu-item-anchor {
+        font-family: inherit;
+    }
+    .clerk-finance-menu-item {
+        font-family: inherit;
+    }
+    .clerk-finance-menu-item-anchor {
+        font-family: inherit;
+    }
+    .signIn-menu-item {
+        font-family: inherit;
+    }
+    .signIn-menu-item-anchor {
+        font-family: inherit;
+    }
+    .main {
+        font-family: inherit;
+    }
+    .main-title {
+        font-size: 4rem;
+    }
+    .footer {
+        font-family: inherit;
+    }
+    .currentyear {
+        font-family: inherit;
+    }
+    .lastModified {
+        font-family: inherit;
+    }
 }

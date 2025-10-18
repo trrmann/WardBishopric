@@ -3,70 +3,120 @@
     font-family: "Eagle Lake", serif, Arial, Helvetica, sans-serif;
 }
 .body {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
 }
 .header {
-    font-family: inherit;    
+    border: .25rem;
+    padding: .25rem;
 }
 .header-menu-anchor {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
+    text-decoration: none;
+}
+.header-menu-anchor::before {
+    border: .25rem;
+    padding: .25rem;
+}
+.header-menu-anchor.show::before {
+    border: .25rem;
+    padding: .25rem;
 }
 .header-menu-title {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
 }
 .header-menu-navigation {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
 }
 .header-menu-navigation-list {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
+}
+.header-menu-navigation-list li {
+    border: .25rem;
+    padding: .25rem;
+}
+.header-menu-navigation-list.show li {
+    border: .25rem;
+    padding: .25rem;
 }
 .header-menu-item {
-    font-family: inherit;
-}
-.home-menu-item {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
 }
 .active {
-    font-family: inherit;
+    border: .25rem;
+    padding: .25rem;
+}
+.active::before {
+    border: .25rem;
+    padding: .25rem;
+	content: "📍";
 }
 .header-menu-item-anchor {
+    border: .25rem;
+    padding: .25rem;
+    text-decoration: none;
+}
+.home-menu-item {
     font-family: inherit;
 }
 .home-menu-item-anchor {
     font-family: inherit;
 }
-.header-menu-item {
+.bishop-menu-item {
     font-family: inherit;
 }
-.page1-menu-item {
+.bishop-menu-item-anchor {
     font-family: inherit;
 }
-.header-menu-item-anchor {
+.counselor-menu-item {
     font-family: inherit;
 }
-.page1-menu-item-anchor {
+.counselor-menu-item-anchor {
     font-family: inherit;
 }
-.header-menu-item {
+.secretary-menu-item {
     font-family: inherit;
 }
-.page2-menu-item {
+.secretary-menu-item-anchor {
     font-family: inherit;
 }
-.header-menu-item-anchor {
+.clerk-menu-item {
     font-family: inherit;
 }
-.page2-menu-item-anchor {
+.clerk-menu-item-anchor {
+    font-family: inherit;
+}
+.clerk-membership-menu-item {
+    font-family: inherit;
+}
+.clerk-membership-menu-item-anchor {
+    font-family: inherit;
+}
+.clerk-finance-menu-item {
+    font-family: inherit;
+}
+.clerk-finance-menu-item-anchor {
+    font-family: inherit;
+}
+.signIn-menu-item {
+    font-family: inherit;
+}
+.signIn-menu-item-anchor {
     font-family: inherit;
 }
 .main {
-    font-family: inherit;
+    text-align: center;
 }
 .main-title {
-    font-family: inherit;
+    font-size: 3rem;
 }
 .footer {
-    font-family: inherit;
+    text-align: center;
 }
 .currentyear {
     font-family: inherit;
