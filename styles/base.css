@@ -1,27 +1,47 @@
 :root {
     --screen:  "Unknown";
+    --primary-color:  white;
+    --secondary-color: yellow;
+    --tertiary-color:  cyan;
+    --primary-background-color: darkblue;
+    --secondary-background-color:  darkorange;
+    --accent-color:  red;
+    --header-color:  var(--primary-background-color);
+    --header-background-color: var(--primary-color);
     font-family: "Eagle Lake", serif, Arial, Helvetica, sans-serif;
 }
 .body {
     border: .25rem;
     padding: .25rem;
+    color: var(--primary-color);
+    background-color: var(--primary-background-color);
 }
 .header {
     border: .25rem;
     padding: .25rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    color: var(--header-color);
+    background-color: var(--header-background-color);
 }
 .header-menu-anchor {
     border: .25rem;
     padding: .25rem;
+    color: var(--header-color);
     text-decoration: none;
+}
+.header-menu-anchor:visited {
+    color: var(--header-color);
 }
 .header-menu-anchor::before {
     border: .25rem;
     padding: .25rem;
+    color: var(--header-color);
 }
 .header-menu-anchor.show::before {
     border: .25rem;
     padding: .25rem;
+    color: var(--header-color);
 }
 .header-menu-title {
     border: .25rem;
@@ -47,6 +67,11 @@
     border: .25rem;
     padding: .25rem;
 }
+.header-menu-item:hover {
+    border: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
 .active {
     border: .25rem;
     padding: .25rem;
@@ -59,7 +84,17 @@
 .header-menu-item-anchor {
     border: .25rem;
     padding: .25rem;
+    color: var(--header-color);
     text-decoration: none;
+}
+.header-menu-item-anchor:visited {
+    color: var(--header-color);
+}
+.header-menu-item-anchor:hover {
+    color: var(--secondary-background-color);
+}
+.header-menu-item-anchor:visited:hover {
+    color: var(--secondary-background-color);
 }
 .home-menu-item {
     font-family: inherit;
@@ -116,9 +151,14 @@
     font-size: 3rem;
 }
 .contentContainer {
-    font-family: inherit;
+    margin: 1rem;
+    padding: 1rem;
 }
 .footer {
+    color: var(--header-color);
+    background-color: var(--header-background-color);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     text-align: center;
 }
 .currentyear {

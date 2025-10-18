@@ -12,6 +12,7 @@ const currentYear = new Date().getFullYear();
 const lastModDate = document.lastModified;
 // setup variables
 const oldDate = new Date("1776-7-4");
+const contentElement = document.createElement('div');
 
 // get parameter value and assign to a variable
 const page = urlParams.get('page');
@@ -78,34 +79,43 @@ switch (page) {
         mainTitle.textContent = "Home";
         headerMenuItem = homeMenuItem;
         //root.style.setProperty('--contentHeight', '1fr');
+        contentElement.textContent = "home content";
         break;
     case "bishop":
         mainTitle.textContent = "Bishop";
         headerMenuItem = bishopMenuItem;
+        contentElement.textContent = "bishop content";
         break;
     case "counselor":
         mainTitle.textContent = "Counselor";
         headerMenuItem = counselorMenuItem;
+        contentElement.textContent = "counselor content";
         break;
     case "secretary":
         mainTitle.textContent = "Secretary";
         headerMenuItem = secretaryMenuItem;
+        contentElement.textContent = "secretary content";
         break;
     case "clerk":
         mainTitle.textContent = "Clerk";
         headerMenuItem = clerkMenuItem;
+        contentElement.textContent = "clerk content";
         break;
     case "clerkMemberShip":
         mainTitle.textContent = "Clerk - Membership";
         headerMenuItem = clerkMembershipMenuItem;
+        contentElement.textContent = "membership content";
         break;
     case "clerkFinance":
         mainTitle.textContent = "Clerk - Finance";
         headerMenuItem = clerkFinanceMenuItem;
+        contentElement.textContent = "finance content";
         break;
     case "SignIn":
         mainTitle.textContent = "Sign In";
         headerMenuItem = signInMenuItem;
+        contentElement.textContent = "sign in content";
         break;
 }
 headerMenuItem.classList.toggle('active');
+contentContainer.appendChild(contentElement);

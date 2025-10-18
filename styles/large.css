@@ -127,7 +127,8 @@
         font-size: 4rem;
     }
     .contentContainer {
-        font-family: inherit;
+        margin: 2rem;
+        padding: 2rem;
     }
     .footer {
         font-family: inherit;

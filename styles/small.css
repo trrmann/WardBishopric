@@ -17,6 +17,12 @@
         width: 99.25%;
         text-align: left;
     }
+    .header-menu-anchor:hover {
+        color: var(--secondary-background-color);
+    }
+    .header-menu-anchor:visited:hover {
+        color: var(--secondary-background-color);
+    }
     .header-menu-anchor::before {
 	    content: "≡";
         padding: 1rem;
@@ -123,7 +129,8 @@
         font-size: 2.5rem;
     }
     .contentContainer {
-        font-family: inherit;
+        margin: .5rem;
+        padding: .5rem;
     }
     .footer {
         font-family: inherit;
