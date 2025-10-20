@@ -64,6 +64,11 @@ headerMenuAnchor.addEventListener('click', () => {
 	headerMenuNavigation.classList.toggle('show');
 	headerMenuAnchor.classList.toggle('show');
 });
+selectUsernameElement.addEventListener('change', (event) => {
+    const selectedValue = event.target.value;
+	inputUsernameLabelElement.classList.toggle('show');
+	headerMenuAnchor.classList.toggle('show');
+});
 
 // update the html element with the data
 if(currentYearElement) {
@@ -114,7 +119,83 @@ switch (page) {
     case "SignIn":
         mainTitle.textContent = "Sign In";
         headerMenuItem = signInMenuItem;
-        contentElement.textContent = "sign in content";
+        const formElement = document.createElement('form');
+            formElement.setAttribute('method','get');
+            formElement.setAttribute('action','index.html?page=home');
+            formElement.classList.add('signInForm');
+        const selectUsernameLabelElement = document.createElement('label');
+            selectUsernameLabelElement.textContent="User Name:";
+            selectUsernameLabelElement.classList.add('userNameSelectLabel');
+            selectUsernameLabelElement.classList.add('show');
+        const selectUsernameElement = document.createElement('select');
+            selectUsernameElement.setAttribute('name','userNameSelect');
+            selectUsernameElement.setAttribute('required','required');
+            selectUsernameElement.setAttribute('autofocus','autofocus');
+            selectUsernameElement.setAttribute('tabindex','1');
+            selectUsernameElement.classList.add('userNameSelect');
+            selectUsernameElement.classList.add('signInLabel');
+        const selectUsernameOptionElement = document.createElement('option');
+            selectUsernameOptionElement.setAttribute('disabled','disabled');
+            selectUsernameOptionElement.setAttribute('selected','selected')
+            selectUsernameOptionElement.setAttribute('value','');
+            selectUsernameOptionElement.textContent="Select a user name ↓";
+        const newUsernameOptionElement = document.createElement('option');
+            newUsernameOptionElement.setAttribute('value','newUserName');
+            newUsernameOptionElement.textContent="New user name.";
+        // create stored users
+            // build stored users
+            // populate stored users
+        const inputUsernameLabelElement = document.createElement('label');
+            inputUsernameLabelElement.textContent="User Name:";
+            inputUsernameLabelElement.classList.add('userNameLabel');
+        const inputUsernameElement = document.createElement('input');
+            inputUsernameElement.setAttribute('type','text');
+            inputUsernameElement.setAttribute('name','userName');
+            inputUsernameElement.setAttribute('tabindex','2');
+            inputUsernameElement.setAttribute('autocomplete','username');
+            inputUsernameElement.classList.add('userName');
+            inputUsernameElement.classList.add('signInLabel');
+        const inputPasswordLabelElement = document.createElement('label');
+            inputPasswordLabelElement.textContent="Password:";
+            inputPasswordLabelElement.classList.add('passwordLabel');
+            inputPasswordLabelElement.classList.add('show');
+        const inputPasswordElement = document.createElement('input');
+            inputPasswordElement.setAttribute('type','text');
+            inputPasswordElement.setAttribute('name','password');
+            inputPasswordElement.setAttribute('required','required');
+            inputPasswordElement.setAttribute('tabindex','3');
+            inputPasswordElement.setAttribute('autocomplete','password');
+            inputPasswordElement.classList.add('password');
+            inputPasswordElement.classList.add('signInLabel');
+        const inputRememberLabelElement = document.createElement('label');
+            inputRememberLabelElement.classList.add('rememberLabel');
+        const inputRememberLabelSpanElement = document.createElement('span');
+            inputRememberLabelSpanElement.textContent="remember user name on this computer.";
+        const inputRememberElement = document.createElement('input');
+            inputRememberElement.setAttribute('type','checkbox');
+            inputRememberElement.setAttribute('name','remember');
+            inputRememberElement.setAttribute('tabindex','4');
+            inputRememberElement.classList.add('remember');
+        const inputLoginElement = document.createElement('input');
+            inputLoginElement.setAttribute('type','submit');
+            inputLoginElement.setAttribute('value','Login');
+            inputLoginElement.setAttribute('tabindex','5');
+            inputLoginElement.classList.add('loginButton');
+            inputLoginElement.classList.add('show');
+        selectUsernameElement.appendChild(selectUsernameOptionElement);
+        selectUsernameElement.appendChild(newUsernameOptionElement);
+        // add stored users
+        selectUsernameLabelElement.appendChild(selectUsernameElement);
+        inputUsernameLabelElement.appendChild(inputUsernameElement);
+        inputPasswordLabelElement.appendChild(inputPasswordElement);
+        inputRememberLabelElement.appendChild(inputRememberElement);
+        inputRememberLabelElement.appendChild(inputRememberLabelSpanElement);
+        formElement.appendChild(selectUsernameLabelElement);
+        formElement.appendChild(inputUsernameLabelElement);
+        formElement.appendChild(inputPasswordLabelElement);
+        formElement.appendChild(inputRememberLabelElement);
+        formElement.appendChild(inputLoginElement);
+        contentElement.appendChild(formElement);
         break;
 }
 headerMenuItem.classList.toggle('active');

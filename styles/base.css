@@ -154,6 +154,32 @@
     margin: 1rem;
     padding: 1rem;
 }
+.signInForm {
+    border: 1px solid var(--primary-color);
+    display: block;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: left;
+}
+.signInForm label {
+    display: none;
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 1rem;
+}
+.signInForm label.show {
+    display: block;
+}
+.signInLabel {
+    width: 100%;
+    padding: .5rem;
+    margin-left: 1rem;
+}
+.loginButton {
+    padding: .5rem;
+    width: 100%;
+    max-width: 40rem;
+}
 .footer {
     color: var(--header-color);
     background-color: var(--header-background-color);
